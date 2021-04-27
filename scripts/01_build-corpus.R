@@ -113,3 +113,12 @@ sample_combined <- tm_map(sample_combined, removeNumbers)
 sample_combined <- tm_map(sample_combined, removeWords, stopwords("english"))
 
 
+
+#---- Save the sampled_combined
+
+rm(list = ls()[!ls() %in% "sample_combined"]) # Remove all other objects
+
+save(sample_combined, file = "data/sample_combined.Rdata")
+
+
+
