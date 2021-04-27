@@ -39,7 +39,7 @@ data_source = "https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Courser
 
 if (!file.exists("data/Coursera-SwiftKey.zip")){
 
-  download.file(url = data_source, destfile = "Coursera-SwiftKey.zip")
+  download.file(url = data_source, destfile = "data/Coursera-SwiftKey.zip")
   unzip("Coursera-SwiftKey.zip")
 }
 
